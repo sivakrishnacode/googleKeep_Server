@@ -33,7 +33,7 @@ app.post('/addItem', (req, res) => {
          const  newData = new ToDoItems({data : data})
          newData.save()
          .then(() => {
-            console.log('Data added successfully');
+            console.log('Data added Successfully');
             let tempRes = {
                 status : 200,
                 response: 'Data added successfully'
